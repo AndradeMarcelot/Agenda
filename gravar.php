@@ -8,8 +8,6 @@ $con = mysqli_connect("localhost","root","","agenda");
 
 $sql = "insert into contatos values(null,'$nome','$email','$telefone')";
 
-
-
 if($nome !="" && $email != "" && $telefone != ""){
     if(mysqli_query($con, $sql)){
         echo "Gravado com sucesso!";
